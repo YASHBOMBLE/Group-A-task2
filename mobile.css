@@ -3,8 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body{
+    width: 100%;
+}
 .topnav {
-  
     position: sticky;
     top: 0px;
     display: flex;
@@ -159,7 +161,7 @@ a:hover{
 
 
 .img6 {
-    height: 45px;
+    height: 40px;
 }
 
 
@@ -199,23 +201,23 @@ a:hover{
 }
 
 .img7 {
-    height: 240px;
+    height: 140px;
     margin-left: 74.5%;
     margin-top: -230px;
 }
 
 .img8{
-    height: 415px;
+    height: 215px;
     margin-left: 73%;
     margin-top: -430px;
 }
 .img9{
-    height: 355px;
-    margin-left: 66.5%;
-    margin-top: -230px;
+    height: 215px;
+    margin-left: 77%;
+    margin-top: -630px;
 }
 .img10{
-    height: 215px;
+    height: 205px;
     margin-left: 72%;
     margin-top: -630px;
 }
