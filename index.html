@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <title>Paytm</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
         .topnav {
             overflow: hidden;
             position: sticky;
@@ -21,28 +24,22 @@
             padding: 14px 16px;
             text-decoration: none;
             font-size: 24px;
+            font-family: Montserrat;
         }
-
-
-
-        .topnav a.split {
-            float: right;
-            color: black;
+        a:hover{
+            color: #00B9F1;
         }
-
         .img {
             height: 70px;
             position: sticky;
             left: 120px;
         }
-
         .img2 {
             position: sticky;
             right: 105px;
             height: 30px;
             padding: 4px;
         }
-
         .img3 {
 
             position: sticky;
@@ -56,7 +53,6 @@
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             border-radius: 20px;
-
         }
 
         .img3:hover {
@@ -73,7 +69,6 @@
             font-family: Arial, Helvetica, sans-serif;
             border-radius: 20px;
             cursor: pointer;
-
         }
 
         .kyc {
@@ -90,8 +85,10 @@
 
         .marquee-txt {
             font-weight: bold;
-            font-size: 30px;
-            word-spacing: 30px;
+            font-size: 25px;
+            word-spacing: 10px;
+            color:black;
+            font-family: Lato;
         }
 
         .txt {
@@ -119,7 +116,7 @@
             font-weight: bold;
             font-size: 20px;
             word-spacing: 4px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Ubuntu;
         }
 
         .btn {
@@ -159,7 +156,7 @@
             padding-left: 100px;
             padding-top: 50px;
             font-weight: bold;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: Edu QLD Beginner;
             margin-bottom: 30px;
         }
 
@@ -176,8 +173,6 @@
             height: 200px;
             width: 100px;
             padding: 20px;
-
-
         }
 
 
@@ -338,13 +333,13 @@
         <a href="./C-programing/c-intro.html">Paytm for Business</a>
         <a href="#contact">Company</a>
         <a href="./java_programing/intro.html">Investor Relations </a>
-        <a href="./Contact-form/contact-us.html" class="split">Career<img src="" /> </a>
+        <a href="./Contact-form/contact-us.html" >Career<img src="" /> </a>
         <span class="img3">Sign in</span><img src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg"
             class="img2" />
     </div>
     <div class="kyc">
-        <marquee direction="left">
-            No Wallet KYC Required 😊to pay using UPI on Paytm.
+        <marquee direction="left" class="marquee-txt">
+           <img src="./img/icons8-new-48.png"/> No Wallet KYC Required 😊to pay using UPI on Paytm.
         </marquee>
 
     </div>
