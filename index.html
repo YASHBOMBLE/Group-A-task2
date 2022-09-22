@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paytm</title>
+    <style>
+        .topnav {
+            overflow: hidden;
+            position: sticky;
+            top: 0px;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+
+        .topnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+
+
+        .topnav a.split {
+            float: right;
+            color: black;
+        }
+
+        .img {
+            height: 70px;
+            position: sticky;
+            left: 120px;
+        }
+
+        .img2 {
+            position: sticky;
+            right: 105px;
+            height: 30px;
+            padding: 4px;
+        }
+
+        .img3 {
+
+            position: sticky;
+            top: 4px;
+            margin-left: 10PX;
+            background-color: #00B9F1;
+            height: 17px;
+            width: 60px;
+            padding: 10px;
+            font-size: 15px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+
+        }
+
+        .img3:hover {
+
+            position: sticky;
+            top: 4px;
+            margin-left: 10PX;
+            background-color: #002E6E;
+            height: 17px;
+            width: 60px;
+            padding: 10px;
+            font-size: 15px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 20px;
+            cursor: pointer;
+
+        }
+
+        .kyc {
+            background-color: #e8f8fd;
+            width: 100%;
+            height: 40px;
+            margin-top: 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            word-spacing: 7px;
+            font-size: 23px;
+        }
+
+        .marquee-txt {
+            font-weight: bold;
+            font-size: 30px;
+            word-spacing: 30px;
+        }
+
+        .txt {
+            margin-top: 160px;
+            margin-left: 220px;
+        }
+
+        .img4 {
+            height: 150px;
+        }
+
+        .txt1 {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .img5 {
+            height: 500px;
+            margin-left: 61.5%;
+            margin-top: -540px;
+        }
+
+        .txt3 {
+            font-weight: bold;
+            font-size: 20px;
+            word-spacing: 4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .btn {
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            color: #e8f8fd;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 17px;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            width: 200px;
+            height: 40px;
+            background-color: white;
+            color: black;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 15px;
+            margin-top: 20px;
+            cursor: pointer;
+            box-shadow: 3.5px 3px 1px 1px #808080;
+        }
+
+        .recharge {
+            background-color: #00B9F1;
+            width: 100%;
+            height: 390px;
+            margin-top: 30px;
+        }
+
+        .heading {
+            font-size: 50px;
+            color: #e8f8fd;
+            padding-left: 100px;
+            padding-top: 50px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 30px;
+        }
+
+        /*card main container*/
+        .card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        /*payment card container*/
+        .card {
+            background-color: #00B9F1;
+            height: 200px;
+            width: 100px;
+            padding: 20px;
+
+
+        }
+
+
+        .img6 {
+            height: 65px;
+        }
+
+
+        .c-txt {
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #e8f8fd;
+            cursor: pointer;
+        }
+
+        .hvr {
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color:  #ccc;
+            cursor: pointer;
+        }
+
+        .hvr:hover {
+            color:#e8f8fd;
+            cursor: pointer;
+        }
+
+        /*payment card hover effect*/
+        .c-txt:hover {
+            color: #002E6E;
+            cursor: pointer;
+        }
+
+        .buy {
+            background-color: #002E6E;
+            width: 100%;
+            height: 390px;
+        }
+
+        .bg-color {
+            background-color: #002E6E;
+        }
+
+        .img7 {
+            height: 440px;
+            margin-left: 73%;
+            margin-top: -430px;
+        }
+     
+        .img8{
+            height: 415px;
+            margin-left: 73%;
+            margin-top: -430px;
+        }
+        .img9{
+            height: 355px;
+            margin-left: 66.5%;
+            margin-top: -230px;
+        }
+        .img10{
+            height: 415px;
+            margin-left: 68%;
+            margin-top: -430px;
+        }
+
+        .position {
+            position: relative;
+            top: 200px;
+            left: -100px;
+        }
+
+        .size {
+            font-size:40px ;
+        }
+
+        .box {
+            background-color: white;
+            height: 600px;
+            margin: 100px;
+            border-radius: 20px;
+            box-shadow: 4px 8px 3px 2px #808080;
+          
+        }
+        .bx{
+            background-color: white;
+            height: 600px;
+            margin: 100px;
+            border-radius: 20px;
+            box-shadow: 4px 8px 3px 2px #808080;
+          
+        }
+        .bx:hover{
+            background-color: #ccc;
+            height: 600px;
+            margin: 95px;
+            border-radius: 20px;
+            box-shadow: 5px 9px 3.5px 3px #808080;
+            transition: 0.5s;
+            color: #e8f8fd;
+            cursor: pointer;
+            font-family: algerian;
+          
+        }
+        .big-box{
+            background-color: #e8f8fd;
+             height: auto; 
+             width: 100%;
+             
+        }
+        .btn1{
+            width: 200px;
+            height: 50px;
+            background-color:#002E6E ;
+            color: #e8f8fd;
+            border-radius: 40px;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .btn1:hover{
+            background-color: #00B9F1;
+            cursor: pointer;
+        }
+        .dis{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .ctr{
+            background-color: white;
+            min-width: 280px;
+            min-height:365px;
+            color: black;
+            margin: 50px;
+            border-radius: 10px;
+        }
+        .ctr:hover{
+            background-color: #00B9F1;
+            min-width: 280px;
+            min-height:365px;
+            color: #e8f8fd;
+            margin: 50px;
+            border-radius: 10px;
+            box-shadow: 5px 4.5px 3px 3.5px #808080;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <img src="./img/credit-card.gif" class="img" />
+        <a class="active" href="#home">Paytm for Consumer</a>
+        <a href="./C-programing/c-intro.html">Paytm for Business</a>
+        <a href="#contact">Company</a>
+        <a href="./java_programing/intro.html">Investor Relations </a>
+        <a href="./Contact-form/contact-us.html" class="split">Career<img src="" /> </a>
+        <span class="img3">Sign in</span><img src="https://assetscdn1.paytm.com/frontendcommonweb/9fd9626b.svg"
+            class="img2" />
+    </div>
+    <div class="kyc">
+        <marquee width="100%" height="100px" direction="left">
+            <span class="marquee-txt"></span>No Wallet KYC Required 😊to pay using UPI on Paytm.
+        </marquee>
+    </div>
+
+    <div class="txt">
+        <img src="./img/credit-card.gif" class="img4" /><br />
+        <span class="txt1">India's Most-loved<br /> Payments App <img src="./img/1656568118664.png" class="img5" />
+
+        </span>
+        <span class="txt3">Recharge & pay bills, book flights & movie tickets,<br /> open a savings account, invest in
+            stocks & mutual <br />funds, and do a lot more.</span>
+        <br />
+
+        <button class="btn">
+            Download App
+            <img src="./img/apple-logo.png" height="20px" />
+            <img src="./img/playstore.png" height="20px" />
+        </button>
+    </div>
+    <div class="recharge">
+        <div class="heading">
+            Recharge & Pay Bills on Paytm.
+        </div>
+
+
+        <div class="card-container">
+            <div class="card">
+                <div align="center">
+                    <img src="./img/1626778824903.png" class="img6" />
+
+                </div>
+                <div class="c-txt">
+                    Recharge<br />
+                    Prepaid<br />
+                    Mobile ><br />
+                </div>
+
+            </div>
+
+
+
+            <div class="card">
+                <div align="center">
+                    <img src="./img/1626778824903.png" class="img6" />
+
+                </div>
+                <div class="c-txt">
+                    Pay <br />
+                    Rent<br />
+                    Payment> </br>
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <div align="center">
+                    <img src="./img/Dth.png" class="img6" />
+
+                </div>
+                <div class="c-txt">
+                    Recharge
+                    DTH
+                    Connection>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="card">
+                <div align="center">
+                    <img src="./img/Electricity.png" class="img6" />
+
+                </div>
+                <div class="c-txt">
+                    Pay <br />
+                    Electricity<br />
+                    Bill><br />
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <div align="center">
+                    <img src="./img/Gas.png" class="img6" />
+
+                </div>
+                <div class="c-txt">
+                    Book <br />
+                    Gas<br />
+                    Cylinder><br />
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <div align="center">
+                    <img src="./img/credit card.png" class="img6" />
+
+                </div>
+                <div class="c-txt">
+                    Pay <br />
+                    credit-card<br />
+                    Bill><br />
+                </div>
+
+
+            </div>
+
+            <div class="card">
+                <div align="center">
+                    <img src="./img/All-service.png" class="img6" />
+
+                </div>
+                <div class="c-txt">
+                    All<br />
+                    Payment<br />
+                    Services><br />
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+ 
+    <div class="buy">
+        <div class="heading">
+            Book & Buy on Paytm.
+        </div>
+
+
+
+
+        <div class="card-container">
+            <div class="card bg-color">
+                <div align="center">
+                    <img src="./img/movie.png" class="img6" />
+
+                </div>
+                <div class=" hvr">
+                    Movie<br/>
+                    Tickets ><br/>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="card bg-color">
+                <div align="center">
+                    <img src="./img/flight.png" class="img6" />
+
+                </div>
+                <div class=" hvr">
+                    Flight <br/>
+                    Tickets ><br/>
+                </div>
+
+
+            </div>
+
+            <div class="card bg-color">
+                <div align="center">
+                    <img src="./img/Bus.png" class="img6" />
+
+                </div>
+                <div class=" hvr">
+                    Bus<br/>
+                    Tickets ><br/>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="card bg-color">
+                <div align="center">
+                    <img src="./img/train.png" class="img6" />
+
+                </div>
+                <div class=" hvr">
+                    Train <br />
+                    Tickets ><br />
+                    
+                </div>
+
+
+            </div>
+
+            <div class="card bg-color">
+                <div align="center">
+                    <img src="./img/car.png" class="img6" />
+
+                </div>
+                <div class="hvr">
+                    Car & <br />
+                    Bikes ><br />
+                </div>
+
+
+            </div>
+
+            <div class="card bg-color">
+                <div align="center">
+                    <img src="./img/I-flight.png" class="img6" />
+
+                </div>
+                <div class="hvr">
+                    International  <br />
+                   Flights ><br/>
+                </div>
+
+
+            </div>
+
+            <div class="card bg-color">
+                <div align="center">
+                    <img src="./img/invest.png" class="img6" />
+
+                </div>
+                <div class="hvr">
+                    Invest<br />
+                    In <br />
+                    Stocks><br />
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="big-box">
+        <span style="font-weight: bolder; font-size: 50px;padding: 100px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
+            Payment Instruments<br /><br /></span>
+        <div align="center" class="box">
+            <span class="position">
+                <!--wallate image-->
+                <div align="center">
+                    <img src="./img/wallet.png" height="70px" />
+                </div>
+                <span class="txt1 size">The Fastest Way to Pay In-store & Online.</span><br />
+                <span class="txt3"> Load up your Paytm Wallet for free and make<br /> payments in a jiffy at over 21
+                    million stores, websites<br /> and apps.
+                    <br/>
+                    <button class="btn">
+                        Download App
+                        <img src="./img/apple-logo.png" height="20px" />
+                        <img src="./img/playstore.png" height="20px" />
+                   </button>
+                </span>
+                <img src="./img/1626077377376.png" class="img7" />
+            </span>
+        </div>
+        <div align="center" class="bx">
+            <span class="position">
+                <!--wallate image-->
+                <div align="center">
+                    <img src="./img/upi.png" height="70px" />
+                </div>
+                <span class="txt1 size">Pay anyone directly<br/> from your bank account.</span><br />
+                <span class="txt3"> Pay anyone, everywhere. Make contactless & secure<br/> payments in-stores or online using Paytm Wallet or<br/> Directly from your Bank Account. Plus, send & receive<br/> money from anyone.
+                    <br/>
+                    <button class="btn">
+                        Download App
+                        <img src="./img/apple-logo.png" height="20px" />
+                        <img src="./img/playstore.png" height="20px" />
+                   </button>
+                </span>
+                <img src="./img/1626342071104.png" class="img8" />
+            </span>
+        </div>
+
+
+        <div align="center" class="box">
+            <span class="position">
+                <!--wallate image-->
+                <div align="center">
+                    <img src="./img/postpaid.png" height="70px" />
+                </div>
+                <span class="txt1 size">Want it? No more waiting for it.</span><br />
+                <span class="txt3"> With Paytm Postpaid, your wishlist doesn't have to be<br/> on the waitlist. Shop for the things you want today and<br/> pay for them next month.<br/>
+                    <button class="btn1">
+                        Learn More ->
+                   </button>
+                </span>
+                <img src="./img/1626077030984.png" class="img8" />
+            </span>
+        </div>
+
+        <div align="center" class="bx">
+            <span class="position">
+                <!--wallate image-->
+             
+                <div align="center">
+                    <img src="./img/p-card.png" height="70px" />
+                </div>
+            
+                <span class="txt1 size">Unlimited Cashback <br/>Every time</span><br />
+                <span class="txt3">Paytm HDFC Bank Select Credit Card.<br/> A card with assured Cashback and incredible offers.
+                  
+                </span>
+                <img src="./img/1640241561388.png" class="img9" />
+            </span>
+        </div>
+
+        <div align="center" class="box">
+            <span class="position">
+                <!--wallate image-->
+             
+                <div align="center">
+                    <img src="./img/s-card.png" height="20px" />
+                </div>
+            
+                <span class="txt1 size">India’s Most <br/>Sincere Credit Card</span><br />
+                <span class="txt3">Paytm SBI Card SELECT - With Intelligent<br/> Features & Great Rewards that Never Expire
+                  
+                </span>
+                <img src="./img//1626079147084.png" class="img9" />
+            </span>
+        </div>
+
+
+
+        <div align="center" class="bx">
+            <span class="position">
+                <!--wallate image-->
+                <div align="center">
+                    <img src="./img/bank.gif" height="70px" />
+                </div>
+                <span style="font-size: 48px; font-weight: bold; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Financial Services by Paytm</span><br/>
+                <span class="txt1 size">India's most sincere bank.</span><br />
+                <span class="txt3"> Paytm Payments Bank offers secure, transparent and<br/> risk-free banking at your fingertips. With instant <br/>account opening, virtual debit card and zero balance<br/> requirements, experience the future of banking today.<br/>
+                    <button class="btn1">
+                        Learn More ->
+                   </button>
+                </span>
+                <img src="./img/1626076427497.png" class="img8" />
+            </span>
+        </div>
+        
+        <div align="center" class="box">
+            <span class="position">
+                <!--wallate image-->
+                <div align="center">
+                    <img src="./img/insurence.png" height="70px" />
+                </div>
+                
+                <span class="txt1 size">Insurance made easy.</span><br />
+                <span class="txt3"> Buying insurance does not have to be tedious, time-<br/>consuming & confusing. Paytm Insurance removes the <br/>worry of getting insured by making it simple,<br/> convenient & easy-to-understand.<br/>
+                    <button class="btn1">
+                        Learn More ->
+                   </button>
+                </span>
+                <img src="./img/insurence1.png" class="img8" />
+            </span>
+        </div>
+        
+
+         
+        <div align="center" class="bx">
+            <span class="position">
+                <!--wallate image-->
+                <div align="center">
+                    <img src="./img/pm.png" height="70px" />
+                </div>
+                
+                <span class="txt1 size">Build Long-term Wealth<br/> & Achieve your Goals.</span><br />
+                <span class="txt3">Investing on Paytm Money is transparent, low-cost and <br/>commission-free. Buy stocks & mutual funds that can<br/> help you create wealth & realise your dreams.<br/>
+                    <button class="btn1">
+                        Learn More ->
+                   </button>
+                </span>
+                <img src="./img/1626077377376.png" class="img8" />
+            </span>
+        </div>
+        
+        <div align="center" class="box">
+            <span class="position">
+                <!--wallate image-->
+                <div align="center">
+                    <img src="./img/pl.png" height="70px" />
+                </div>
+                
+                <span class="txt1 size" style="font-family: sans-serif;">Get a Personal Loan in 2 Minutes.</span><br />
+                <span class="txt3">Paytm offers India's quickest multi-purpose, hassle-free loan. <br/>It is 100% digital, transparent and paperless.
+                    <br/><button class="btn1">
+                        Learn More ->
+                   </button>
+                </span>
+                <img src="./img/loan.png" class="img8" />
+            </span>
+        </div>
+        <span style="font-size: 49px; font-weight:bold; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; padding:40px">Business Services by Paytm</span>
+   
+        <div align="center" class="bx">
+            <span class="position">
+                <!--wallate image-->
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <span class="txt1 size" style="font-family: sans-serif; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Accept payments online with ease</span><br />
+                <span class="txt3" >Paytm offers India's quickest multi-purpose, hassle-free loan. <br/>It is 100% digital, transparent and paperless.
+                    <br/><button class="btn1">
+                        Learn More ->
+                   </button>
+                </span>
+                <img src="./img/business.png" class="img8" />
+            </span>
+        </div>
+
+        <div align="center" class="box">
+            <span class="position">
+                <!--wallate image-->
+                <br/> <br/><br/><br/><br/>
+                
+                <span class="txt1 size" style="font-family:'Courier New', Courier, monospace">In-shop payments <br/>powered by Paytm.</span><br />
+                <span class="txt3">Millions of small & big businesses use Paytm to accept <br/>payments anywhere any time with a wide range of <br/>solutions for all kind of merchants
+                    <br/><button class="btn1">
+                        Learn More ->
+                   </button>
+                </span>
+                <img src="./img/accept.png" class="img10" />
+            </span>
+        </div>
+        <span style="font-size: 49px; font-weight:bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;padding:50px; color:tomato;">Business Tools to help your business grow</span>
+          <div class="dis">
+            <div class="ctr">
+                <div align="center">
+                    <img src="./img/dash.png" style="height: 180px; padding: 10px;" /><br/>
+                    <span style="font-size: 25px; font-weight:bold; font-family:monospace;padding: 4px;">POS Billing Software</span>
+                    <br/>
+                    <br/><span style="font-size: 20px; font-weight: lighter; font-family: serif; word-spacing: 5px;">Say Hello to Smart Retail<br/> Business Management.<br/><br/><a href="#learn more" style="text-decoration: none; color:black">Learn more</a></span>
+                </div>
+            </div>
+            
+            <div class="ctr">
+                <div align="center">
+                    <img src="./img/free.png" style="height: 180px; padding: 10px;" /><br/>
+                    <span style="font-size: 25px; font-weight:bold; font-family:monospace;padding: 4px;">Paytm for Business App</span>
+                    <br/>
+                    <br/><span style="font-size: 20px; font-weight: lighter; font-family: serif; word-spacing: 5px;">Everything you need to manage<br/> your business on your phone.<br/><br/><a href="#learn more" style="text-decoration: none; color:black">Learn more</a></span>
+                </div>
+            </div>
+
+            <div class="ctr">
+                <div align="center">
+                    <img src="./img/visa.png" style="height: 180px; padding: 10px;" /><br/>
+                    <span style="font-size: 25px; font-weight:bold; font-family:monospace;padding: 4px;">Advertise onPaytm</span>
+                    <br/>
+                    <br/><span style="font-size: 20px; font-weight: lighter; font-family: serif; word-spacing: 5px;">Grow your business by advertising on India’s<br/> largest mobile business.<br/><br/><a href="#learn more" style="text-decoration: none; color:black">Learn more</a></span>
+                </div>
+            </div>
+
+            <div class="ctr">
+                <div align="center">
+                    <img src="./img/store.png" style="height: 180px; padding: 10px;" /><br/>
+                    <span style="font-size: 25px; font-weight:bold; font-family:monospace;padding: 4px;">Business Khata</span>
+                    <br/>
+                    <br/><span style="font-size: 20px; font-weight: lighter; font-family: serif; word-spacing: 5px;">Managing Khata made <br/>easy<br/><br/><a href="#learn more" style="text-decoration: none; color:black">Learn more</a></span>
+                </div>
+            </div>
+
+          </div>
+
+          
+    </div>
+</body>
+
+</html>
